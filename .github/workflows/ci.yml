@@ -23,5 +23,5 @@ jobs:
       - name: Test Docker image
         run: echo "Test"
       - name: Push Docker image
-        run: docker push ghcr.io/${{ github.repository }}/my-flask-app:latest
+        run: docker push ghcr.io/kwozniczak/project-devops/my-flask-app:latest
         if: github.ref == 'refs/heads/main'
